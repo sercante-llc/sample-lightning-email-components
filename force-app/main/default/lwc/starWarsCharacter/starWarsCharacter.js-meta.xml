@@ -8,7 +8,12 @@
     </targets>
     <targetConfigs>
         <targetConfig targets="lightningStatic__Email">
-            <property label="Star Wars Character" name="characterInfo" type="String" datasource="apex://StarWarsCharacterPicklist" required="false" />
+            <property 
+                label="Star Wars Character"
+                name="characterInfo"
+                type="String"
+                datasource="apex://StarWarsCharacterPicklist" 
+                required="false" />
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>
