@@ -20,7 +20,7 @@
                 type="String"
                 placeholder="https://"
                 description="Enter Image URL for this image. Be sure that it is a secure URL starting with https://"
-                default="https://via.placeholder.com/600x150"
+                default="https://via.placeholder.com/575x150"
                 required="false" />
             <property 
                 label="Description"
