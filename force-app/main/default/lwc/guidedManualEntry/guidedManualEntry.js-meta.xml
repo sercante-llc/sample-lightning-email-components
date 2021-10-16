@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Guided Manual Entry</masterLabel>
+    <targets>
+        <target>lightningStatic__Email</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningStatic__Email">
+            <property 
+                label="Title"
+                name="title"
+                type="String"
+                default="Title of Entry"
+                required="false" />
+            <property 
+                label="Image URL"
+                name="imageUrl"
+                type="String"
+                placeholder="https://"
+                description="Enter Image URL for this image. Be sure that it is a secure URL starting with https://"
+                default="https://via.placeholder.com/600x150"
+                required="false" />
+            <property 
+                label="Description"
+                name="description"
+                type="String"
+                default="Description of Entry"
+                required="false" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
