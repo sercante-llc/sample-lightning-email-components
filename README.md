@@ -6,7 +6,10 @@ Note: this documentation is still a work in progress, please bear with us!
 - **fixedAddress**: The simplest component one can create, this one simply places HTML in the email. My example was a hard-coded Company Address. No edits are possible by the person making the email.
 - **fixedWithMergeFields**: Pretty much the same as above, but with a Merge Field added. Sadly you have to make adjustments to it, so for example instead of `{{{Recipient.FirstName}}}` you have to put in `{{{Recipient.FirstName&#125;&#125;&#125;` (has to do with LWC validating and compiling the curly braces for the LWC engine instead of just leaving it for email merging.
 - **guidedManualEntry**: This one kicks it up 1 small step, where the Component allows the Email Editor to provide values (in my example it was a Title, Image URL, and a Description.  The unfortunate thing is that we can't specify a TextArea for input, so we are stuck with a single line input. BOOOO
-- **starWarsCharacter**: This one uses an open API (https://swapi.dev) and should allow people to pick a Character, then the component will render details about that character in the email. There's something broken in the Lightning Builder though, and the DynamicPicklist approach isn't working...so this can't be fully shown off just yet.
+- **htmlPicklist**: This one (should) present a dropdown choice of options. Once picked, the value should appear in the email.
+- **starWarsCharacter**: This one uses an open API (https://swapi.dev) and should allow people to pick a Character, then the component will (should) render details about that character in the email. 
+
+Note: There's something broken in the Lightning Builder, and the DynamicPicklist approach isn't working...so this can't be fully shown off just yet.
 
 
 ## Other great examples:
