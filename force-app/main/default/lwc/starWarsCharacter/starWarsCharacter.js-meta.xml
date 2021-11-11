@@ -10,10 +10,10 @@
         <targetConfig targets="lightningStatic__Email">
             <property 
                 label="Star Wars Character"
-                name="characterInfo"
+                name="characterJson"
                 type="String"
                 datasource="apex://StarWarsCharacterPicklist" 
-                required="false" />
+                required="true" />
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>

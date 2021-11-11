@@ -1,3 +1,20 @@
 <template>
-    <div ishtmlcontainer="true" lwc:dom="manual"></div>
+    <template if:false={characterChosen}>
+        <h3>Please select a Star Wars character from the picklist to the left</h3>
+        <p>It may take a moment for Salesforce to retrieve the list of Characters and make them ready to display</p>
+        <p>To my knowledge, it isn't possible to bind a search criteria to the API request, so all options need to be fetched first, however I'd love to know if someone figures this out!</p>
+    </template>
+    <template if:true={characterChosen}>
+        <div class="card">
+            <h2>{character.name}</h2>
+            <p>
+                Height: {character.height}<br />
+                BirthYear: {character.birth_year}<br />
+                HairColor: {character.hair_color}<br />
+                HomeWorld: {character.homeworld}
+                <template if:true={hasFilms}><br />Featured in {character.films.length} films</template>
+                <template if:true={hasStarships}><br />Found in {character.starships.length} star ships</template>
+            </p>
+        </div>
+    </template>
 </template>
