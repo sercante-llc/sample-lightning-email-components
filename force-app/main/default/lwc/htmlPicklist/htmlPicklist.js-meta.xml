@@ -11,7 +11,8 @@
     <targetConfigs>
         <targetConfig targets="lightningStatic__Email">
             <property 
-                name="htmlValue" 
+                name="htmlValue"
+                label="Pick an HTML Sample"
                 type="String" 
                 required="true" 
                 datasource="apex://HTMLSources"/>
